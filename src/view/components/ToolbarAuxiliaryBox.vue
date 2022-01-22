@@ -1,7 +1,9 @@
 <!-- == TEMPLATE =============================================================================== -->
 
-<template>
-  <h1 class="message">{{ msg }}</h1>
+<template class="toolbar-auxiliary-box">
+  <div class="toolbar-auxiliary-box">
+    {{ 'A' }}
+  </div>
 </template>
 
 <!-- == SCRIPT ================================================================================= -->
@@ -9,20 +11,11 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-@Options({
-  props: {
-    msg: String,
-  },
-})
-export default class HelloWorld extends Vue {
-  msg!: string;
-}
+@Options({})
+export default class App extends Vue {}
 </script>
 
 <!-- == STYLE ================================================================================== -->
 
-<style scoped lang="scss">
-.message {
-  margin: 0 auto;
-}
+<style lang="scss">
 </style>
